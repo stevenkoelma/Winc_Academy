@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/29e70f7163.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Oswald:wght@600&display=swap");
+    </style>
+    <script defer type="text/javascript" src="movielist.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+
+    <title>Moviebox</title>
+  </head>
+  <body>
+    <header>
+      <h1>MOVIEBOXXX <i class="fas fa-film"></i></h1>
+    </header>
+
+    <nav>
+      <div class="x-men">
+        <input type="radio" id="X-Men" name="radio" value="filter" />
+        <label for="X-Men">X-Men</label>
+      </div>
+
+      <div class="avengers">
+        <input type="radio" id="Avengers" name="radio" value="filter" />
+        <label for="avengers">The Avengers</label>
+      </div>
+
+      <div class="batman">
+        <input type="radio" id="Batman" name="radio" value="filter" />
+        <label for="batman">Batman</label>
+      </div>
+
+      <div class="princess">
+        <input type="radio" id="Princess" name="radio" value="filter" />
+        <label for="princess">The Princess</label>
+      </div>
+
+      <div class="latestmovies">
+        <input type="radio" id="Latestmovies" name="radio" value="filter" />
+        <label for="latestmovies">Nieuwste films</label>
+      </div>
+    </nav>
+
+    <div class="searchbar">
+      <input
+        id="searchbar"
+        type="search"
+        class="searchbar__term"
+        placeholder="Zoeken op film..."
+      />
+    </div>
+
+    <main>
+      <ul id="movielist"></ul>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
