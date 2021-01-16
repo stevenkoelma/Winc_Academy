@@ -1,0 +1,124 @@
+@-webkit-keyframes pushbar {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+}
+
+@keyframes pushbar {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  background-color: #c3cfe2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.socialmedia {
+  display: inline-block;
+  position: fixed;
+  top: 5%;
+  right: -60px;
+}
+
+.socialmedia li {
+  list-style-type: none;
+  width: 80px;
+}
+
+.socialmedia li:hover {
+  -webkit-animation: pushbar 750ms forwards;
+          animation: pushbar 750ms forwards;
+}
+
+.socialmedia a {
+  color: white;
+  font-size: 5px;
+  text-decoration: none;
+}
+
+.socialmedia__blog {
+  background-color: #e17b77;
+}
+
+.socialmedia__blog::before {
+  padding: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  content: "\f5fc";
+}
+
+.socialmedia__twitter {
+  background-color: #00aced;
+}
+
+.socialmedia__twitter::before {
+  padding: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  content: "\e059";
+}
+
+.socialmedia__linkedin {
+  background-color: #007bb6;
+}
+
+.socialmedia__linkedin::before {
+  padding: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  content: "\e06f";
+}
+
+.socialmedia__facebook {
+  background-color: #3b5998;
+}
+
+.socialmedia__facebook::before {
+  padding: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  content: "\e074";
+}
+
+.socialmedia__github {
+  background-color: #333;
+}
+
+.socialmedia__github::before {
+  padding: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  content: "\e063";
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 9px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+/*# sourceMappingURL=styles.css.map */
