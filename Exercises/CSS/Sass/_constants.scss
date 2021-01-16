@@ -1,0 +1,8 @@
+$box-odd: #97d279;
+$padding-standard: 20px; 
+
+@mixin text-styling {
+    max-width: 700px;
+    text-align: center;
+    font-style: italic; 
+}
