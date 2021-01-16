@@ -1,0 +1,99 @@
+body, html {
+    height: 100%;
+}
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr 0.5fr;
+    grid-gap: 3px;
+
+      
+}
+.site-header {
+    background-color: seagreen;
+}
+
+.site-main {
+    background-color: lightskyblue;
+    
+
+}
+.widget-area {
+    background-color: yellowgreen;
+    
+
+}
+.site-footer {
+    background-color: plum;
+}
+
+/* MEDIAQUERIES */
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 15% 1fr;
+        grid-template-rows: 50% 30% 10%;
+        grid-template-areas: 
+        "h m"
+        "h w"
+        "h f";
+    }
+    .site-header {
+        background-color: seagreen;
+        grid-area: h;
+    }
+    
+    .site-main {
+        background-color: lightskyblue;
+        grid-area: m;
+        
+    
+    }
+    .widget-area {
+        background-color: yellowgreen;
+        grid-area: w;
+        
+    
+    }
+    .site-footer {
+        background-color: plum;
+        grid-area: f;
+    }
+        }
+/* EXTRA BREED SCHERM */
+
+@media (min-width: 1900px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 90% 10%;
+        grid-template-areas: 
+        "h m w"
+        "h f w"
+        
+    }
+    .site-header {
+        background-color: seagreen;
+        grid-area: h;
+    }
+    
+    .site-main {
+        background-color: lightskyblue;
+        grid-area: m;
+        
+    
+    }
+    .widget-area {
+        background-color: yellowgreen;
+        grid-area: w;
+        
+    
+    }
+    .site-footer {
+        background-color: plum;
+        grid-area: f;
+    }
+}
