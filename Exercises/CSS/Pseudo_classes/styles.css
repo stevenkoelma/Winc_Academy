@@ -1,0 +1,43 @@
+ul {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkblue;
+}
+
+.currentPage {
+    background-color: #6699cc;
+
+}
+
+li:hover{
+   background-color: lightblue;
+}
+
+
+input:focus {
+background-color: lightblue;    
+}
+
+/* Deel 1 */
+
+.first-link:hover {
+    color: lightblue;
+    font-weight: bold;
+}
+
+.second-link:active {
+color: red;
+font-style: italic;
+}
+
+.third-link:visited {
+    color: yellow;
+   
+}
+
+input:focus{
+color: green;
+font-size: 20px;
+}
