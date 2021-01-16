@@ -1,0 +1,27 @@
+Requirements
+
+[x]  Als gebruiker wil ik een lijst kunnen zien van de beschikbare films met de poster van de film.
+
+[x]  Als gebruiker wil ik bovenaan de pagina kunnen klikken op 5 verschillende filters in de vorm van radio-buttons. De filter functionaliteit wordt hieronder verder toegelicht.
+
+[x]  Als gebruiker kan ik maar 1 filter tegelijk gebruiken.
+
+[x]  Als ik een ander filter aanklik gaat het andere filter dus weer uit.
+
+[x]  Categorie 1: Als gebruiker wil ik kunnen filteren op de categorie nieuwste films: van de laatste jaren, dat betekent 2014 of nieuwer.
+
+[x]  Categorie 2: Als gebruiker wil ik kunnen filteren op films met "Avengers" in de titel.
+
+[x]  Categorie 3: Als gebruiker wil ik kunnen filteren op films met "X-Men" in de titel.
+
+[x]  Categorie 4: Als gebruiker wil ik kunnen filteren op films met "Princess" in de titel.
+
+[x]  Categorie 5: Als gebruiker wil ik kunnen filteren op films met "Batman" in de titel.
+
+[x]  Als gebruiker kan ik op de poster van de film klikken, waardoor ik naar de juiste IMDB pagina wordt gebracht.
+
+Bonus requirements
+
+[x]  Styling en design
+
+[x]  Als gebruiker kan ik in een inputfield de titel van een film invullen, wanneer ik op enter druk worden de films gefilterd op de titel die ik heb ingevuld.
