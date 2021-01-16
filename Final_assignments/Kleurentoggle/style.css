@@ -1,0 +1,151 @@
+@-webkit-keyframes pushbarOut {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(-55px);
+            transform: translateX(-55px);
+  }
+}
+
+@keyframes pushbarOut {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(-55px);
+            transform: translateX(-55px);
+  }
+}
+
+@-webkit-keyframes pushbarIn {
+  from {
+    -webkit-transform: translateX(-55px);
+            transform: translateX(-55px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes pushbarIn {
+  from {
+    -webkit-transform: translateX(-55px);
+            transform: translateX(-55px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #c3cfe2;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  cursor: pointer;
+}
+
+li {
+  padding: 0px 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: block;
+  -webkit-animation: pushbarIn 750ms;
+          animation: pushbarIn 750ms;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+  margin-top: 0px;
+  margin-left: 2px;
+  -webkit-animation: pushbarIn 850ms;
+          animation: pushbarIn 850ms;
+}
+
+.dropdown-content__home {
+  background-color: #c3cfe2;
+}
+
+.dropdown-content__red {
+  background-color: red;
+}
+
+.dropdown-content__orange {
+  background-color: orange;
+}
+
+.dropdown-content__purple {
+  background-color: purple;
+}
+
+.dropdown-content__green {
+  background-color: green;
+}
+
+.dropdown-menu:hover .dropdown-content {
+  display: inline-block;
+  top: 48px;
+}
+
+.default-background {
+  background-color: #c3cfe2;
+}
+
+.red-background {
+  background-color: red;
+}
+
+.orange-background {
+  background-color: orange;
+}
+
+.purple-background {
+  background-color: purple;
+}
+
+.green-background {
+  background-color: green;
+}
+
+.menu-closed {
+  opacity: 0;
+  -webkit-transition: opacity 800ms;
+  transition: opacity 800ms;
+  -webkit-animation: pushbarOut 850ms forwards;
+          animation: pushbarOut 850ms forwards;
+}
+
+.text {
+  display: block;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Nerko One", cursive;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

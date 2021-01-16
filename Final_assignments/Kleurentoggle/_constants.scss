@@ -1,0 +1,17 @@
+@keyframes pushbarOut {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-55px);
+  }
+}
+
+@keyframes pushbarIn {
+  from {
+    transform: translateX(-55px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
