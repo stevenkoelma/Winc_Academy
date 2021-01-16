@@ -1,0 +1,177 @@
+body {
+  color: #ffffff;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 10px 1fr 20px;
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas:
+    ". h ."
+    ". m ."
+    ". f .";
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: linear-gradient(#f77f00, #d62828);
+  border-radius: 25px;
+  font-family: "Bowlby One SC", cursive;
+  text-align: center;
+  grid-area: h;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 4% 0%;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Bowlby One SC", cursive;
+}
+
+nav,
+ul,
+li {
+  margin: 0;
+  padding: 2% 0%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -25px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 25%;
+}
+
+.twitter,
+.instagram,
+.facebook {
+  padding: 5%;
+}
+
+nav {
+  position: relative;
+  top: 20%;
+}
+
+main {
+  grid-area: m;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background: linear-gradient(#f77f00, #d62828);
+  border-radius: 25px;
+  text-align: center;
+  margin: 2% 0%;
+}
+
+p {
+  padding: 2%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 80%;
+  border-radius: 25px;
+  background: linear-gradient(#f77f00, #d62828);
+  grid-area: f;
+}
+
+.copyright {
+  align-self: center;
+  padding-left: 2%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  font-family: "Do Hyeon", sans-serif;
+  color: #ffffff;
+  background-color: #f77f00;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background-color: #d62828;
+}
+
+/* MEDIA QUERIES */
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1024px) {
+  .grid-container {
+    row-gap: 8px;
+    grid-template-rows: auto 2fr auto;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+  }
+
+  h1 {
+    font-size: 4em;
+    padding-bottom: 1%;
+  }
+
+  .socials {
+    font-size: 3em;
+  }
+
+  .button,
+  h2 {
+    font-size: 2em;
+  }
+
+  article {
+    margin: 0;
+  }
+}
