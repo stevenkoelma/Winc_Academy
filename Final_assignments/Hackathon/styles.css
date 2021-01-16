@@ -1,0 +1,262 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    
+    
+}
+.grid-container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: auto 1fr 100px;
+    grid-template-areas: 
+    ". h ."
+    ". m ."
+    ". f .";
+
+}
+
+header {
+    background: linear-gradient(#f77f00, #d62828);
+    border-radius: 25px;
+    margin: 5px;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: xx-large;
+    text-align: center;
+    grid-area: h;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h1 {
+    padding: 5px 5px 5px 5px;
+    margin: 10px 10px 5px 10px;
+  
+ 
+    }
+
+.subtitle {
+   display: flex;
+ justify-content: flex-start;
+   font-family: 'Do Hyeon', sans-serif;
+
+    
+}
+
+.sub-1 {
+    font-size: x-large;
+    padding: 0px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
+    margin-left: auto;
+  
+}
+
+.sub-2 {
+    font-size: small;
+    padding: 10px;
+    margin: 10px;
+    margin-right: auto;
+    
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.twitter {
+    padding: 5px;
+    margin: 5px;
+}
+
+.instagram {
+    padding: 5px;
+    margin: 5px;
+}
+
+.facebook {
+    padding: 5px;
+    margin: 5px;
+}
+
+main {
+        grid-area: m;
+        }
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80%;
+    margin: 10px;
+    border-radius: 25px;
+    background: linear-gradient(#f77f00, #d62828);
+    font-weight: 100;
+    grid-area: f;
+}
+
+.copyright {
+    align-self: center;
+}
+
+.about {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(#f77f00, #d62828);
+    border-radius: 25px;
+    text-align: center;
+    padding: 125px;
+    margin: 10px;
+   
+    
+    
+}
+.portfolio {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(#f77f00, #d62828);
+    border-radius: 25px;
+    text-align: center;
+    padding: 125px;
+       margin: 10px;
+      
+    
+       
+}
+.contact {
+    font-family: 'Roboto', sans-serif;  
+    color: #ffffff;
+    background: linear-gradient(#f77f00, #d62828);
+    border-radius: 25px;
+    text-align: center;
+    padding: 125px;
+        margin: 10px;   
+       
+    
+    }
+  
+ul {
+    display: flex;
+    align-items: flex-end;
+    margin: 0px;
+    
+}
+
+li {
+    list-style-type: none;
+}
+
+.vertical-line {
+    margin-right: 0px;
+    margin-left: 0px;
+    border-right: 2px solid white;
+    height: 58px;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+  }
+
+.nav {
+    margin: 15px;
+}
+
+.button {
+display:inline-block;
+padding:0.3em 1.2em;
+margin:0 0.3em 0.3em 0;
+border-radius:2em;
+box-sizing: border-box;
+font-family:'Do Hyeon', sans-serif;
+color:#FFFFFF;
+background-color:#f77f00;
+text-align:center;
+transition: all 0.2s;
+}
+
+.button:hover{
+background-color: #d62828;
+
+}
+
+article, section {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(#f77f00, #d62828);
+    border-radius: 25px;
+    text-align: center;
+    padding: 125px;
+    margin: 10px;
+}
+
+.portret {
+   display: inline-flex;
+   
+    
+}
+
+img {
+    margin: 20px;
+}
+
+
+
+.werkgever {
+    padding: 20px;
+    text-align: left;
+}
+
+.werkzaamheden{
+        padding: 20px;
+        text-align: left;
+    }
+
+.xx-title{
+    font-family: 'Bowlby One SC', cursive;
+    font-size: xx-large;
+    text-align: center;
+    
+}
+
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-grow: 4;  
+}
+    
+
+    
+
+/* MEDIA QUERIES */
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1024px) {
+
+ .grid-container {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: auto 1fr 100px;
+    }
+        
+.btns {
+    display: flex;
+    justify-content: space-between;    
+}
+
+}
