@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Over Steven Koelma</title>
+</head>
+<body>
+    <ul>
+        <li>Woonplaats: Ruinerwold</li>
+        <li>Leeftijd:29</li>
+        <li>Geboorteplaats: Heerenveen</li>
+    </ul>
+    <a href="https://www.google.com">
+    <img src="Steven.jpeg" alt="Pasfoto Steven Koelma" width="300" height="400"> </a>
+    <a href="index.html">Terug naar home pagina</a>   
+
+</body>
+</html>
