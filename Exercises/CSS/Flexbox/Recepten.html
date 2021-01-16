@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <title>Recepten insturen</title>
+</head>
+<body>
+    <a href="index.html">Home</a>
+
+    <form name="basic-form" method="POST" data-netlify="true">
+        <label>Naam: <input type="text" name="name" /></label><br>
+        <label>Mail: <input type="email" name="email"></label><br>
+        <label>Telefoonnummer: <input type="tel" name="phone"></label><br>
+        <label>Geboortedatum: <input type="date" name="birthday"></label><br>
+        <label>Geslacht: 
+            <input type="radio" name="gender" value="male">Man
+            <input type="radio" name="gender" value="female">Vrouw
+        </label><br>
+        <label>Favoriete keuken: 
+            <input type="checkbox" name="cuisine" value="French">Frans
+            <input type="checkbox" name="cuisine" value="Spanish">Spaans
+            <input type="checkbox" name="cuisine" value="Italian">Italiaans
+            <input type="checkbox" name="cuisine" value="Arabic">Arabisch
+        </label><br>
+        <label>Favoriete kleur: <input type="color"></label><br>
+        <label>Biografie: <textarea name="biography"></textarea></label><br>
+        <label>Upload hier jouw laatste recept: <input type="file" name="file"></label><br>
+        <label>URL eigen recepten website: <input type="url" name="link"></label><br><br>   
+        <input type="reset" value="Reset"><br>
+        <button type="submit">Versturen</button>
+            </form>
+    
+</body>
+</html>
