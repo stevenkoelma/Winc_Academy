@@ -1,0 +1,39 @@
+Algemene requirements
+
+[x] Sass principe is gebruikt in elke sub-opdracht
+
+[x] BEM principe is gebruikt in elke sub-opdracht
+
+[x] Geen horizontale scrolling
+
+Level 1:
+
+[x] Testimonial design is compleet:
+
+[x] footer testimonial - paars/blauw: #686de0
+
+[x] Achtergrond pagina - grijs: #c3cfe2
+
+[x] Achtergrondkleur tekst - wit: #fff
+
+[x] Random portretfoto gebruikt
+
+Level 2:
+
+[x] Portfolio grid is compleet:
+
+[x] Achtergrond pagina grijs: #c3cfe2
+
+[x] Er verschijnt een button on hover. De foto verdwijnt smoothly.
+
+[x] Grid is mobile responsive voor 3 schermen: Desktop: 3 kolommen, Tablet:  2 kolommen, Mobiel:  1 kolom   
+
+Level 3:
+
+[x] Social media buttons zijn compleet:
+
+[x] Social media buttons zijn aanwezig
+
+[x] Social media buttons hebben ongeveer dezelfde animatie zoals in het voorbeeld
+
+[x] Social media iconen zijn toegevoegd met ::before (bonus)
