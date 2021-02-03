@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="Scripts/api-client.js"></script>
+    <script defer src="Scripts/script.js"></script>
+    <script defer src="https://kit.fontawesome.com/29e70f7163.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+
+    <title>To Do's</title>
+  </head>
+  <body>
+    <header>
+      <h1>To do's <i class="fas fa-check-square"></i></h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="addtaskcontainer">
+          <input
+            type="text"
+            id="inputfield"
+            class="addtaskcontainer__inputfield"
+            placeholder="Fill in your task..."
+          />
+          <input
+            type="submit"
+            id="addtaskbutton"
+            class="addtaskcontainer__button"
+            value="Add task"
+          />
+          <input
+            type="submit"
+            id="removeallbutton"
+            class="addtaskcontainer__button"
+            value="Remove all tasks"
+          />
+        </div>
+
+        <ul class="tasklist"></ul>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <a href="https://www.linkedin.com/in/stevenkoelma/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/stevenkoelma" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <p>© Steven Koelma, 2021</p>
+    </footer>
+  </body>
+</html>

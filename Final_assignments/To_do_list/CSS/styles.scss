@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import "./constants.scss";
+
+body {
+  background-color: #c70039;
+  box-sizing: border-box;
+}
+
+header {
+  color: #ffffff;
+  font-family: "Pacifico", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3em;
+  border-bottom: 1px solid #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addtaskcontainer {
+  display: flex;
+  align-items: center;
+
+  &__inputfield {
+    border: none;
+    height: 20px;
+    margin: 2px;
+  }
+
+  &__inputfield:focus {
+    @include inputfieldstyling;
+  }
+
+  &__button {
+    background-color: #f37121;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  &__button:hover {
+    background-color: #111d5e;
+    box-shadow: $shadow;
+    cursor: pointer;
+  }
+}
+
+.tasklist {
+  display: grid;
+  grid-template-columns: 20px 2fr repeat(2, auto);
+  gap: 5px;
+  color: #ffffff;
+
+  &__checkbox {
+    height: 15px;
+    width: 15px;
+  }
+
+  &__task {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 110%;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    margin: 0px 5px 5px 5px;
+  }
+
+  &__editfield {
+    @include inputfieldstyling;
+  }
+
+  &__linethrough {
+    text-decoration: line-through;
+  }
+
+  &__editbutton:hover {
+    box-shadow: $shadow;
+    background-color: #111d5e;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  &__removebutton {
+    background-color: #111d5e;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  &__removebutton:hover {
+    box-shadow: $shadow;
+    border: 2px solid #ffffff;
+  }
+}
+
+footer {
+  color: #ffffff;
+  font-family: 'Trebuchet MS';
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: #ffffff;
+  font-size: 3em;
+  margin: 5px;
+}
