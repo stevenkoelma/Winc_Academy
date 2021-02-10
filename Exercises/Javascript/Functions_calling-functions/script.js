@@ -17,11 +17,6 @@ const greet = (age) => {
 console.log(greet(17));
 console.log(greet(18));
 
-
-
-// baseprice and VAT
-// Return: price including VAT
-
 const calculateVAT = (baseprice, percentage) => baseprice * (percentage / 100)
 
 const calculatePriceWithVAT = (baseprice, percentage) => {
